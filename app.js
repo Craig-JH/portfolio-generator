@@ -1,4 +1,4 @@
-const fs = require('fs');
+const { writeFile, copyFile } = require('./utils/generate-site.js');
 const inquirer = require('inquirer');
 const generatePage = require('./src/page-template');
 
@@ -138,13 +138,7 @@ Add a New Project
 //       }
 //       console.log('Page created! Check out index.html in this directory to see it!');
     
-//       fs.copyFile('./src/style.css', './dist/style.css', err => {
-//         if (err) {
-//           console.log(err);
-//           return;
-//         }
-//         console.log('Style sheet copied successfully!');
-//       });
+//      
 //     });
 //   });
 
